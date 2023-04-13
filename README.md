@@ -20,7 +20,7 @@
 ## Local Script Development
 
 ### Scripted Browser
-* Need to import the following config into any js file:
+* Import the following config into any js file:
 
 ```
 /** Local Dev Config **/
