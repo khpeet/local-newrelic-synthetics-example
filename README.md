@@ -50,7 +50,7 @@ New Relic allows the `require` syntax, but locally, you usually have to import. 
 
 
 ## Troubleshooting
-* "chromedriver" cannot be opened because the developer cannot be verified - this can be fixed by trusting the `chromedriver` binary, by running the command:
+* `"chromedriver" cannot be opened because the developer cannot be verified` - this can be fixed by trusting the `chromedriver` binary, by running the command:
 
 ```
 xattr -d com.apple.quarantine /usr/local/bin/chromedriver
