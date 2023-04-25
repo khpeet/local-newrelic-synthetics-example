@@ -31,10 +31,10 @@ jobs:
       - name: Sync Changes to Synthetics
         if: steps.changed-files.outputs.any_changed == 'true'
         uses: newrelic-experimental/synthetics-sync@v1.0
-        # with: # all optional defaults for creation of new scripts committed
-        #   accountId: 1
-        #   runtime: "new"
-        #   privateLocations: "[{'guid': '...'}]"
-        #   publicLocations: "['AWS_AP_EAST_1', 'AWS_US_EAST_2']"
-        #   interval: EVERY_15_MINUTES
-        #   status: ENABLED
+        with: # all optional defaults for creation of new scripts committed
+          accountId: ""
+          runtime: ""
+          privateLocations: ""
+          publicLocations: ""
+          interval: ""
+          status: ""
