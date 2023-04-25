@@ -1,6 +1,6 @@
 /** Local Dev Config - REMOVE when adding to NR **/
-const $selenium = require('selenium-webdriver');
-let $webDriver = new $selenium.Builder().forBrowser('chrome').build();
+// const $selenium = require('selenium-webdriver');
+// let $webDriver = new $selenium.Builder().forBrowser('chrome').build();
 /** Local Dev Config - REMOVE when adding to NR **/
 
 //monitorType: SCRIPT_BROWSER
@@ -10,7 +10,7 @@ var colors = require('colors');
 var elementWaitTimer = 10000;
 
 const url_to_monitor = 'https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=simple-login-form';
-const user = 'keagan2'; //$secure.user
+const user = 'keagan'; //$secure.user
 const pass = 'test';
 /** CONFIGURATION **/
 
