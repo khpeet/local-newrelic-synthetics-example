@@ -5,6 +5,8 @@ import got from 'got'; // Requires adding "type": "module" to package.json
 //use this instead when importing to New Relic Synthetics
 //var got = require('got');
 
+//monitorType: SCRIPT_API
+
 let urls = ['https://google.com', 'https://newrelic.com'];
 
 

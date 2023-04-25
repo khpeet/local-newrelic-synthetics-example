@@ -9,7 +9,9 @@
   "author": "Keagan Peet",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "got": "^12.6.0",
     "selenium-webdriver": "^4.1.0"
-  }
+  },
+  "type":"module"
 }
