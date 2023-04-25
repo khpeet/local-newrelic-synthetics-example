@@ -30,7 +30,7 @@ jobs:
 
       - name: Sync Changes to Synthetics
         if: steps.changed-files.outputs.any_changed == 'true'
-        uses: newrelic-experimental/synthetics-sync@v1.1
+        uses: newrelic-experimental/synthetics-sync@v1.2
         with: # all optional defaults for creation of new scripts committed
           accountId: ""
           runtime: ""
