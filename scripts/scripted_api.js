@@ -1,9 +1,7 @@
 /** Local Dev Config - REMOVE when adding to NR **/
-import got from 'got'; // Requires adding "type": "module" to package.json
-/** Local Dev Config - REMOVE when adding to NR **/
+import $http from 'got'; // Requires adding "type": "module" to package.json
 
-//use this instead when importing to New Relic Synthetics
-//var got = require('got');
+/** Local Dev Config - REMOVE when adding to NR **/
 
 //monitorType: SCRIPT_API
 
@@ -24,7 +22,7 @@ async function checkUri(uri) {
     url: uri,
     headers: {}
   };
-  let resp = await got.get(opts);
+  let resp = await $http.get(opts);
 
   return resp.statusCode
 }
