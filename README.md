@@ -32,16 +32,27 @@ let $webDriver = new $selenium.Builder().forBrowser('chrome').build();
 This will allow for the same functions/syntax to be used compared to the New Relic Synthetics runtime.
 
 ### Scripted API
+
+In order to leverage the `$http` syntax that enables New Relic Synthetics to capture more information about requests, use the following alias for the `got` module.
+
+```
+import $http from 'got';
+```
+
 Most of the time you will want to import additional modules, such as `got`, which replaces the deprecated `request` module to make http/API requests. In some cases, this requires importing the module instead of requiring it. For example:
 
 ```
-import got from 'got';
+import crypto from 'crypto-js';
+import lodash from 'lodash';
+import moment from 'moment';
 ```
 
 instead of:
 
 ```
-var got = require('got');
+var crypto = require('crypto-js');
+var lodash = require('lodash');
+var moment = require('moment');
 ```
 
 The import syntax also requires adding `"type": "module"` to your `package.json`.
